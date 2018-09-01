@@ -1,0 +1,26 @@
+{
+  "name": "validate-this-card",
+  "version": "1.0.0",
+  "description": "Informa se o número de um cartão de crédito é válido.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "\"mocha\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marciapsilva/validate-this-card.git"
+  },
+  "keywords": [
+    "laboratoria",
+    "validate-this-card"
+  ],
+  "author": "Marcia Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marciapsilva/validate-this-card/issues"
+  },
+  "homepage": "https://github.com/marciapsilva/validate-this-card#readme"
+}
