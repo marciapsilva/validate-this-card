@@ -2,11 +2,11 @@
 
 **A função desta biblioteca é informar se o número de um cartão de crédito é válido.** 
 
-Seguindo o algorítmo de Luhn, retorna `true` se o número de cartão de crédito informado for válido e `false` se não for válido.
+Seguindo o algoritmo de Luhn, retorna `true` se o número de cartão de crédito informado for válido e `false` se não for válido.
 
 ## Instalação
 
-Após instalar o npm em seu computador (mais informações [aqui][https://www.npmjs.com/get-npm]), digite o seguinte código em seu terminal:
+Após instalar o npm em seu computador (mais informações [aqui](https://www.npmjs.com/get-npm), digite o seguinte código em seu terminal:
 
 ```
 $npm install validate-this-card
@@ -34,8 +34,8 @@ true
 
 ## Keywords
 
-laboratoria, validate this card
+laboratoria, validate-this-card
 
 ## Project Github
 
-[Validate This Card][https://github.com/marciapsilva/validate-this-card]
+[Validate This Card](https://github.com/marciapsilva/validate-this-card)
