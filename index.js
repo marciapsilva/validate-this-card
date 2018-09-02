@@ -1,4 +1,4 @@
-function cardValidator(number) {
+const cardValidator = (number) => { 
   if (number === undefined) {
     return 'Erro: não há parâmetro';
   }
