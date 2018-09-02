@@ -1,4 +1,4 @@
-module.exports.cardValidator = (number) => {
+const cardValidator = (number) => {
   if (number === undefined) {
     return 'Erro: não há parâmetro';
   }
@@ -29,3 +29,5 @@ const doubleEverySecondDigit = array => array.map((n, index) => {
     if (n > 9) n -=9;
   return n;  
 });
+
+module.exports.cardValidator = cardValidator;

@@ -32,10 +32,6 @@ true
 
 - Retorna se um número de cartão de crédito é válido ou não. 
 
-## Keywords
-
-laboratoria, validate-this-card
-
 ## Project Github
 
 [Validate This Card](https://github.com/marciapsilva/validate-this-card)
