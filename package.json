@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/marciapsilva/validate-this-card/issues"
   },
-  "homepage": "https://github.com/marciapsilva/validate-this-card#readme"
+  "homepage": "https://github.com/marciapsilva/validate-this-card#readme",
+  "dependencies": {
+    "chai": "^4.1.2"
+  }
 }
