@@ -2,9 +2,11 @@ const cardValidator = (number) => {
   if (number === undefined) {
     throw new Error('nenhum parâmetro foi informado');
   } else if (typeof number === 'string') {
-    throw new Error('o parâmetro não aceita string');
+    throw new Error('a função não aceita string como parâmetro');
   } else if (number.toString().length < 2) {
     throw new Error('o número do cartão precisa ter mais de um dígito');
+  } else if (number.toString().match(/\d+[.]\d+/)) {
+    throw new Error('a função só aceita número inteiro como parâmetro');
   } else {
     return isValidCard(number);
   }
