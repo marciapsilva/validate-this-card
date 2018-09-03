@@ -16,9 +16,9 @@ describe('cardValidator()', () => {
     expect(() => cardValidator()).to.throw('nenhum parâmetro foi informado');
   });
   it('Deveria retornar erro para uma string', () => {
-    expect(() => cardValidator('esta é uma string')).to.throw('não aceita string');
+    expect(() => cardValidator('esta é uma string')).to.throw('o parâmetro não aceita string');
   });
-  it('Deveria retornar erro para número com dígito', () => {
-    expect(() => cardValidator('352352-24')).to.throw('não aceita número com dígito e não aceita string');
+  it('Deveria retornar erro para número com um único dígito', () => {
+    expect(() => cardValidator(3)).to.throw('o número do cartão precisa ter mais de um dígito');
   });
 });

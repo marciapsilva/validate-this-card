@@ -1,4 +1,4 @@
-# Validate This Card v1.1.1
+# Validate This Card v1.1.2
 
 **A função desta biblioteca é informar se o número de um cartão de crédito é válido.** 
 
