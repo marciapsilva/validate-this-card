@@ -1,4 +1,4 @@
-# Validate This Card v1.0.3
+# Validate This Card v1.1.3
 
 **A função desta biblioteca é informar se o número de um cartão de crédito é válido.** 
 
@@ -19,7 +19,7 @@ No Node.js, digitar:
 ```
 const lib = require('validate-this-card')
 lib.cardValidator(36490102462661);
-\\true
+//true
 ```
 
 ## Roadmap

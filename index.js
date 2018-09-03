@@ -1,18 +1,16 @@
 const cardValidator = (number) => { 
   if (number === undefined) {
-    return 'Erro: não há parâmetro';
-  }
-  if (typeof number === 'number') {
+    throw new Error('nenhum parâmetro foi informado');
+  } else if (typeof number === 'string') {
+    if (number.toString().match(/[\d]*[-]+[\d]*/)) {
+      throw new Error('não aceita número com dígito e não aceita string');
+    } else {
+      throw new Error('não aceita string');
+    }
+  } else {
     return isValidCard(number);
   }
-  if (typeof number === 'string') {
-    if (number.toString().match(/[\d]*[-]+[\d]*/)) {
-      return 'Não aceita número com dígito';
-    } else {
-      return 'Não aceita string';
-    }
-  }
-}
+};
 
 const isValidCard = number => {
   const invertedCardNumberArray = number.toString().split('').reverse().map(n => parseInt(n));
@@ -24,9 +22,10 @@ const isValidCard = number => {
 };
 
 const doubleEverySecondDigit = array => array.map((n, index) => {
-  if (index % 2 !== 0) 
+  if (index % 2 !== 0) { 
     n *= 2;
-    if (n > 9) n -=9;
+    if (n > 9) n -= 9;
+  }
   return n;  
 });
 
