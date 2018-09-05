@@ -1,4 +1,4 @@
-# Validate This Card v1.2.1
+# Validate This Card v2.0.0
 
 **This library checks and informs if a credit card number is valid.**
 

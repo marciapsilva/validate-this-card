@@ -22,7 +22,7 @@ describe('cardValidator()', () => {
     expect(() => cardValidator('45754')).to.throw('this function does not accept string as argument');
   });
   it('should return error for 3', () => {
-    expect(() => cardValidator(3)).to.throw('number must have more than one digit');
+    expect(() => cardValidator(3)).to.throw('argument must have more than one digit');
   });
   it('should return error for 31.454', () => {
     expect(() => cardValidator(31.454)).to.throw('this function only accepts an integer as argument');
