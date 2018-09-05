@@ -6,25 +6,25 @@ const cardValidator = index.cardValidator;
 const expect = chai.expect;
 
 describe('cardValidator()', () => {
-  it('Deveria retornar true para o número 36490102462661', () => {
+  it('should return true for 36490102462661', () => {
     expect(cardValidator(36490102462661)).to.equal(true);
   });
-  it('Deveria retornar false para o número 26490102462661', () => {
+  it('should return false for 26490102462661', () => {
     expect(cardValidator(26490102462661)).to.equal(false);
   });
-  it('Deveria retornar erro para parâmetro vazio', () => {
-    expect(() => cardValidator()).to.throw('nenhum parâmetro foi informado');
+  it('should return error for a missing argument', () => {
+    expect(() => cardValidator()).to.throw('missing argument');
   });
-  it('Deveria retornar erro para uma string', () => {
-    expect(() => cardValidator('esta é uma string')).to.throw('a função não aceita string como parâmetro');
+  it('should return error for "this is a string"', () => {
+    expect(() => cardValidator('this is a string')).to.throw('this function does not accept string as argument');
   });
-  it('Deveria retornar erro para uma string', () => {
-    expect(() => cardValidator('45754')).to.throw('a função não aceita string como parâmetro');
+  it('should return error for "45754"', () => {
+    expect(() => cardValidator('45754')).to.throw('this function does not accept string as argument');
   });
-  it('Deveria retornar erro para número com um único dígito', () => {
-    expect(() => cardValidator(3)).to.throw('o número do cartão precisa ter mais de um dígito');
+  it('should return error for 3', () => {
+    expect(() => cardValidator(3)).to.throw('number must have more than one digit');
   });
-  it('Deveria retornar erro para numero não-inteiro', () => {
-    expect(() => cardValidator(31.454)).to.throw('a função só aceita número inteiro como parâmetro');
+  it('should return error for 31.454', () => {
+    expect(() => cardValidator(31.454)).to.throw('this function only accepts an integer as argument');
   });
 });

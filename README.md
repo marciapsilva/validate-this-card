@@ -1,20 +1,20 @@
 # Validate This Card v1.2.1
 
-**A função desta biblioteca é informar se o número de um cartão de crédito é válido.** 
+**This library checks and informs if a credit card number is valid.**
 
-Seguindo o algoritmo de Luhn, retorna `true` se o número de cartão de crédito informado for válido e `false` se não for válido.
+Following Luhn algorithm, it returns `true` if the credit card number entered is valid and `false` if it's not.
 
-## Instalação
+## Installation
 
-Após instalar o npm em seu computador (mais informações [aqui](https://www.npmjs.com/get-npm), digite o seguinte código em seu terminal:
+After installing npm on the computer (more info about it [here](https://www.npmjs.com/get-npm)), enter the following code in the terminal:
 
 ```
 $npm install validate-this-card
 ```
 
-## Exemplo de uso
+## Usage example
 
-No Node.js, digitar:
+In Node.js, enter:
 
 ```
 const lib = require('validate-this-card')
@@ -24,14 +24,17 @@ lib.cardValidator(36490102462661);
 
 ## Roadmap
 
-#### Versão 2.0.0 (sem previsão)
-- Aceita mais de um número de cartão de crédito como argumento da função. 
-- README em inglês.
+#### Version 3.0.0 (tba)
+- Upon credit card brand detection, accepts a number only if it has the standard digit size set by each brand; 
+- Accepts more than one argument (credit card number) at a time.  
 
-#### Versão 1.0.0 (wip)
+#### Version 2.0.0 (published)
+- Error's messages and README translated into English.
 
-- Retorna se um número de cartão de crédito é válido ou não. 
+#### Version 1.0.0 (published)
 
-## Project Github
+- Returns `true` if the credit card number entered is valid and `false` if it's not.
+
+## Project on Github
 
 [Validate This Card](https://github.com/marciapsilva/validate-this-card)
