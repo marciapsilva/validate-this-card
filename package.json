@@ -1,6 +1,6 @@
 {
   "name": "validate-this-card",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Checks and informs if a credit card number is valid.",
   "main": "index.js",
   "directories": {
